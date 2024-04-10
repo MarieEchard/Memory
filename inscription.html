@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENI - Memory - Inscription</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <div class="navbar">
+        <img src="images/Eni_Logo.png" alt="Logo ENI">
+        <div class="nav-liens">
+            <a href="accueil.html">Accueil</a>
+            <a href="jeu.html">Jouer</a>
+            <a href="profil.html">Profil</a>
+            <a href="#">S'inscrire</a>
+            <span> / </span>
+            <a href="connexion.html">Connexion</a>
+        </div>
+        
+    </div>
+
+
+    <!-- Le contenu de la page va ici -->
+
+    <h1 class="tp-hypertext">ENI - Memory</h1>
+
+    <fieldset class="fieldset-main" id="inscriptionForm">
+        <h2 class="tp-title">Inscription</h2>
+        
+        <!--Champ pseudo-->
+        <fieldset class="tp-fieldset">
+            <legend>Nom d'utilisateur</legend>
+                <div class="tp-group">
+                    <input id="nomUtilisateur" class="tp-input" type="text" placeholder="3 caractères minimum">
+                </div>
+        </fieldset>
+
+        <!--Champ email-->
+        <fieldset class="tp-fieldset">
+            <legend>Entrez votre E-mail</legend>
+                <div class="tp-group">
+                    <input id="email" class="tp-input" type="text" placeholder="Votre E-mail">
+                </div>
+        </fieldset>
+                
+        <!--Champ mot de passe-->
+        <fieldset class="tp-fieldset">
+            <legend>Mot de passe</legend>
+                <div class="tp-group">
+                    <input id="motDePasse" class="tp-input" type="password" pattern="^^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" placeholder="Mot de passe">
+                    <button class="button-oeil" type="button" id="btn-visibilite-password">
+                        <img id="oeil" src="images/eye-close.png" alt="Icône oeil fermé" >
+                    </button>
+                    <p>Au moins un symbole, un chiffre ainsi que 6 caractères minimum.</p>
+                </div>
+        </fieldset>
+
+        <!--Confirmation MdP-->
+        <fieldset class="tp-fieldset">
+            <legend>Confirmez le mot de passe</legend>
+                <div class="tp-group">
+                    <input id="confirmationMotDePasse" class="tp-input" type="password" pattern="^^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" placeholder="Confirmation du mot de passe">
+                </div>
+        </fieldset>
+
+        <div class="tp-group">
+            <!--bouton Valider-->
+            <button id="validerButton" class="tp-btn">Créer le compte</button>
+            <!--bouton Valider-->
+            <button class="tp-btn">Annuler</button> 
+        </div>
+    </fieldset> 
+
+<script src="js/inscription.js"></script>
+</body>
+</html>

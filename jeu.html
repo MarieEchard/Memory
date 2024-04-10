@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENI - Memory - options</title>
+    <link rel="stylesheet" href="main.css">
+    
+    
+</head>
+<body>
+    <div class="navbar">
+        <img src="images/Eni_Logo.png" alt="Logo ENI">
+        <div class="nav-liens">
+            <a href="accueil.html">Accueil</a>
+            <a href="#">Jouer</a>
+            <a href="profil.html">Profil</a>
+            <a href="inscription.html">S'inscrire</a>
+            <span> / </span>
+            <a href="connexion.html">Connexion</a>
+        </div>
+        
+    </div>
+    <h1 class="tp-hypertext">ENI - Memory</H1>
+    <fieldset class="fieldset-main">
+        <h2 class="tp-title">Jeu</h2>
+        <div class="compteur" id="compteur">
+            <span>compteur : </span>
+            <span id="nbEssais">0</span>
+        </div>
+        <table class="tableauJeu" id="plateau"></table>
+    </fieldset>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p>Félicitation ! Vous avez gagné la partie avec un score de: <span id="score">0</span> essais.</p>
+            <button id="rejouer">Rejouer</button>
+            <button id="retourMenu">Retour au menu</button>
+        </div>
+    </div>
+<script src="js/jeu.js"></script>
+</body>
+</html>

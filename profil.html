@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENI - Memory - Profil</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="images/Eni_Logo.png" alt="Logo ENI">
+        <div class="nav-liens">
+            <a href="accueil.html">Accueil</a>
+            <a href="jeu.html">Jouer</a>
+            <a href="#">Profil</a>
+            <a href="inscription.html">S'inscrire</a>
+            <span> / </span>
+            <a href="connexion.html">Connexion</a>
+        </div>
+        
+    </div>
+      
+
+    <!--Informations profil-->
+
+    <h1 class="tp-hypertext">ENI - Memory</h1>
+
+    <fieldset class="fieldset-main">
+
+        <h2 class="tp-title">Profil</h2>
+        <img class="img-profil" src="images/question.svg" alt="Image de profil">
+        
+        <!--Champ pseudo-->
+        <fieldset class="tp-fieldset">
+            <legend>Nom d'utilisateur</legend>
+                <div class="tp-group">
+                    <input class="tp-input" type="text" placeholder="Votre pseudo">
+                </div>
+        </fieldset>
+
+        <!--Champ email-->
+        <fieldset class="tp-fieldset">
+            <legend>Entrez votre E-mail</legend>
+                <div class="tp-group">
+                    <input class="tp-input" type="text" placeholder="Votre E-mail">
+                </div>
+        </fieldset>
+
+        <label for="selecteurTheme">Sélectionnez un thème : </label>
+        <select id="selecteurTheme">
+            <option value="alphabetScrabble">Alphabet du Scrabble</option>
+            <option value="animaux">Animaux</option>
+            <option value="animauxAnimes">Animaux Animés</option>
+            <option value="animauxDomestiques">Animaux domestiques</option>
+            <option value="chiens">Chiens</option>
+            <option value="dinosaures">Dinosaures</option>
+            <option value="dinosauresAvecNom">Dinosaures avec leurs noms</option>
+            <option value="memoryLegume">Legumes</option>
+        </select>
+        <!--bouton Valider-->
+        <button class="tp-btn" id="enregistrerTheme">enregistrer les modifications</button>
+
+        <div class="tp-group">
+            <p class="tp-subtext">Vous n'avez pas de compte ? <a class="tp-hypertext" href="inscription.html">S'inscrire</a></p>
+        </div>
+
+    </fieldset>
+<script src="js/profil.js"></script>
+</body>
+</html>
